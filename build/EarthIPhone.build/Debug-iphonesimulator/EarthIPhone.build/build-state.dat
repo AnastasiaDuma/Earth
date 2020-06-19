@@ -1,0 +1,683 @@
+TEarthIPhone
+v7
+r0
+t367847200.657800
+cCheck dependencies
+cProcessInfoPlistFile /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist EarthIPhone-Info.plist
+cCompileXIB /Projects/EarthIPhone/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/EarthIPhone.app/Miller-projection1000.jpg Resources/Miller-projection1000.jpg
+cProcessPCH /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch.gch EarthIPhone_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o /Projects/EarthIPhone/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o /Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o /Projects/EarthIPhone/Classes/EarthAccelerator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o /Projects/EarthIPhone/Classes/EarthView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o /Projects/EarthIPhone/Classes/EarthViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o /Projects/EarthIPhone/Classes/Sphere.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o /Projects/EarthIPhone/Classes/SphereProvider.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone normal i386
+cGenerateDSYMFile /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+cTouch /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Projects/EarthIPhone/Classes/EarthAccelerator.h
+c000000004DC6E3F5000000000000037E
+t1304880117
+s894
+i<Foundation/Foundation.h>
+
+N/Projects/EarthIPhone/Classes/EarthAccelerator.m
+c000000004DC72C0C000000000000099D
+t1304898572
+s2461
+i"EarthAccelerator.h"
+
+N/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.h
+c000000004DC7CCE700000000000001DF
+t1304939751
+s479
+i<UIKit/UIKit.h>
+
+N/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m
+c000000004DC7CCE70000000000000324
+t1304939751
+s804
+i"EarthIPhoneAppDelegate.h"
+i"EarthViewController.h"
+
+N/Projects/EarthIPhone/Classes/EarthView.h
+c000000004DC6E04F000000000000032C
+t1304879183
+s812
+i<Foundation/Foundation.h>
+i"Sphere.h"
+
+N/Projects/EarthIPhone/Classes/EarthView.m
+c000000004DC7E3930000000000002301
+t1304945555
+s8961
+i"EarthView.h"
+
+N/Projects/EarthIPhone/Classes/EarthViewController.h
+c000000004DC6DAE10000000000000180
+t1304877793
+s384
+i<UIKit/UIKit.h>
+i"EarthView.h"
+i"EarthAccelerator.h"
+
+N/Projects/EarthIPhone/Classes/EarthViewController.m
+c000000004DC70165000000000000088B
+t1304887653
+s2187
+i"EarthViewController.h"
+
+N/Projects/EarthIPhone/Classes/Sphere.h
+c000000004DC71265000000000000026D
+t1304892005
+s621
+i<Foundation/Foundation.h>
+i"SphereProvider.h"
+
+N/Projects/EarthIPhone/Classes/Sphere.m
+c000000004DC7157600000000000004FC
+t1304892790
+s1276
+i"Sphere.h"
+
+N/Projects/EarthIPhone/Classes/SphereProvider.h
+c000000004DC7126500000000000002F5
+t1304892005
+s757
+i<Foundation/Foundation.h>
+
+N/Projects/EarthIPhone/Classes/SphereProvider.m
+c000000004DC72D7D0000000000000D0C
+t1304898941
+s3340
+i"SphereProvider.h"
+
+N/Projects/EarthIPhone/EarthIPhone_Prefix.pch
+c000000004DC7CBC200000000000000BF
+t1304939458
+s191
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Projects/EarthIPhone/MainWindow.xib
+c000000004DC7CDE40000000000004FD0
+t1304940004
+s20432
+
+N/Projects/EarthIPhone/Resources/Miller-projection1000.jpg
+c000000004DC6EB2400000000000B7BCA
+t1304881956
+s752586
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+t1346154302
+s238
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM
+t1346154302
+s102
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+t1346154302
+s44808
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist
+t1304939461
+s607
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/MainWindow.nib
+t1304940009
+s1665
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Miller-projection1000.jpg
+t1304940257
+s752586
+
+N/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/PkgInfo
+t1304939461
+s8
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o
+t1346154301
+s16324
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhone.LinkFileList
+c00000000503CAF3C0000000000000355
+t1346154300
+s853
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o
+t1346154301
+s50456
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o
+t1346154301
+s61384
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o
+t1346154301
+s48680
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o
+t1346154301
+s10956
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o
+t1346154301
+s17032
+
+N/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o
+t1346154301
+s6276
+
+N/Projects/EarthIPhone/main.m
+c000000004DC7CBC20000000000000167
+t1304939458
+s359
+i<UIKit/UIKit.h>
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.h
+c000000004DC6E3F5000000000000037E
+t1304880117
+s894
+i<Foundation/Foundation.h>
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m
+c000000004DC72C0C000000000000099D
+t1304898572
+s2461
+i"EarthAccelerator.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.h
+c000000004DC7CCE700000000000001DF
+t1304939751
+s479
+i<UIKit/UIKit.h>
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m
+c000000004DC7CCE70000000000000324
+t1304939751
+s804
+i"EarthIPhoneAppDelegate.h"
+i"EarthViewController.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.h
+c000000004DC6E04F000000000000032C
+t1304879183
+s812
+i<Foundation/Foundation.h>
+i"Sphere.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m
+c000000004DC7E3930000000000002301
+t1304945555
+s8961
+i"EarthView.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.h
+c000000004DC6DAE10000000000000180
+t1304877793
+s384
+i<UIKit/UIKit.h>
+i"EarthView.h"
+i"EarthAccelerator.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m
+c000000004DC70165000000000000088B
+t1304887653
+s2187
+i"EarthViewController.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.h
+c000000004DC71265000000000000026D
+t1304892005
+s621
+i<Foundation/Foundation.h>
+i"SphereProvider.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m
+c000000004DC7157600000000000004FC
+t1304892790
+s1276
+i"Sphere.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.h
+c000000004DC7126500000000000002F5
+t1304892005
+s757
+i<Foundation/Foundation.h>
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m
+c000000004DC72D7D0000000000000D0C
+t1304898941
+s3340
+i"SphereProvider.h"
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/EarthIPhone_Prefix.pch
+c000000004DC7CBC200000000000000BF
+t1304939458
+s191
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/MainWindow.xib
+c000000004DC7CDE40000000000004FD0
+t1304940004
+s20432
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/Resources/Miller-projection1000.jpg
+c000000004DC6EB2400000000000B7BCA
+t1304881956
+s752586
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+t1304942566
+s238
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM
+t1304942566
+s102
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+t1304942566
+s45128
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist
+t1304939461
+s607
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/MainWindow.nib
+t1304940009
+s1665
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Miller-projection1000.jpg
+t1304940257
+s752586
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/PkgInfo
+t1304939461
+s8
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o
+t1304939588
+s16364
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhone.LinkFileList
+c000000004DC7CC4400000000000003F6
+t1304939588
+s1014
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o
+t1304939751
+s50504
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o
+t1304942566
+s61304
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o
+t1304939588
+s48724
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o
+t1304939588
+s11004
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o
+t1304939588
+s17104
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o
+t1304939462
+s6324
+
+N/Users/asyamiropolskaya/Projects/EarthIPhone/main.m
+c000000004DC7CBC20000000000000167
+t1304939458
+s359
+i<UIKit/UIKit.h>
+
+N/var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch.gch
+t1346154301
+s15814064
+
+N/var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch.gch
+t1304939462
+s15814064
+
+NEarthIPhone-Info.plist
+c000000004DC7CBC2000000000000038D
+t1304939458
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies367847200#367847200#0(0"0(0#1#0"32651522506817640#0"0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o /Projects/EarthIPhone/Classes/EarthAccelerator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.344403
+e367847101.488358
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o
+x/Projects/EarthIPhone/Classes/EarthAccelerator.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@56"Compile /Projects/EarthIPhone/Classes/EarthAccelerator.m367847101#367847101#0(0"0(0#0#48"/Projects/EarthIPhone/Classes/EarthAccelerator.m8607582080#1839"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/EarthAccelerator.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632388.079402
+e326632388.218012
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m326632388#326632388#0(0"0(0#0#71"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m8612438496#2092"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthAccelerator.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthAccelerator.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o /Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.177356
+e367847101.363250
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o
+x/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@62"Compile /Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m367847101#367847101#0(0"0(0#0#54"/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m8604044160#1851"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632551.367974
+e326632551.453140
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@85"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m326632551#326632551#0(0"0(0#0#77"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m8611143072#2104"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthIPhoneAppDelegate.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhoneAppDelegate.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o /Projects/EarthIPhone/Classes/EarthView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.363365
+e367847101.669420
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o
+x/Projects/EarthIPhone/Classes/EarthView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@49"Compile /Projects/EarthIPhone/Classes/EarthView.m367847101#367847101#0(0"0(0#0#41"/Projects/EarthIPhone/Classes/EarthView.m8606364256#1825"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/EarthView.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326635366.426918
+e326635366.735766
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m326635366#326635366#0(0"0(0#0#64"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m8617528832#2078"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthView.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthView.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o /Projects/EarthIPhone/Classes/EarthViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.488496
+e367847101.573177
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o
+x/Projects/EarthIPhone/Classes/EarthViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Projects/EarthIPhone/Classes/EarthViewController.m367847101#367847101#0(0"0(0#0#51"/Projects/EarthIPhone/Classes/EarthViewController.m8607473056#1845"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/EarthViewController.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632388.218118
+e326632388.303317
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m326632388#326632388#0(0"0(0#0#74"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m8612708608#2098"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/EarthViewController.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthViewController.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o /Projects/EarthIPhone/Classes/Sphere.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.573379
+e367847101.636706
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o
+x/Projects/EarthIPhone/Classes/Sphere.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@46"Compile /Projects/EarthIPhone/Classes/Sphere.m367847101#367847101#0(0"0(0#0#38"/Projects/EarthIPhone/Classes/Sphere.m8606524640#1819"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/Sphere.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632388.303421
+e326632388.384504
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m326632388#326632388#0(0"0(0#0#61"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m8612017376#2072"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/Sphere.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/Sphere.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o /Projects/EarthIPhone/Classes/SphereProvider.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.636814
+e367847101.708893
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o
+x/Projects/EarthIPhone/Classes/SphereProvider.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@54"Compile /Projects/EarthIPhone/Classes/SphereProvider.m367847101#367847101#0(0"0(0#0#46"/Projects/EarthIPhone/Classes/SphereProvider.m8606086528#1835"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/Classes/SphereProvider.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632388.349981
+e326632388.429131
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m326632388#326632388#0(0"0(0#0#69"/Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m8609691488#2088"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/Classes/SphereProvider.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/SphereProvider.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o /Projects/EarthIPhone/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847101.176027
+e367847101.344297
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o
+x/Projects/EarthIPhone/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Compile /Projects/EarthIPhone/main.m367847101#367847101#0(0"0(0#0#28"/Projects/EarthIPhone/main.m8608484576#1807"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch -c /Projects/EarthIPhone/main.m -o /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o0#
+
+CCompileC build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o /Users/asyamiropolskaya/Projects/EarthIPhone/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632262.323606
+e326632262.381145
+r1
+xCompileC
+xbuild/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o
+x/Users/asyamiropolskaya/Projects/EarthIPhone/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/asyamiropolskaya/Projects/EarthIPhone/main.m326632262#326632262#0(0"0(0#0#51"/Users/asyamiropolskaya/Projects/EarthIPhone/main.m8625867776#2060"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -include /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch -c /Users/asyamiropolskaya/Projects/EarthIPhone/main.m -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Projects/EarthIPhone/MainWindow.xib
+r0
+
+CCompileXIB /Users/asyamiropolskaya/Projects/EarthIPhone/MainWindow.xib
+s326632808.717877
+e326632809.084123
+r1
+xCompileXIB
+x/Users/asyamiropolskaya/Projects/EarthIPhone/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib326632808#326632809#0(0"0(0#0#59"/Users/asyamiropolskaya/Projects/EarthIPhone/MainWindow.xib8622519264#592"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/MainWindow.nib /Users/asyamiropolskaya/Projects/EarthIPhone/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource build/Debug-iphonesimulator/EarthIPhone.app/Miller-projection1000.jpg Resources/Miller-projection1000.jpg
+s326633057.158883
+e326633057.271226
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/EarthIPhone.app/Miller-projection1000.jpg
+xResources/Miller-projection1000.jpg
+lSLF07#2@40"Copy Resources/Miller-projection1000.jpg326633057#326633057#0(0"0(0#0#80"/Users/asyamiropolskaya/Projects/EarthIPhone/Resources/Miller-projection1000.jpg8612834176#515"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/asyamiropolskaya/Projects/EarthIPhone/Resources/Miller-projection1000.jpg /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app0#
+
+CGenerateDSYMFile /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+s367847102.062283
+e367847102.116913
+r1
+xGenerateDSYMFile
+x/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM
+x/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/EarthIPhone.app.dSYM build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone367847102#367847102#0(0"0(0#0#77"/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone8608477536#344"    cd /Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone -o /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM0#
+
+CGenerateDSYMFile /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+s326635366.764389
+e326635366.784311
+r1
+xGenerateDSYMFile
+x/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM
+x/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+lSLF07#2@121"GenerateDSYMFile build/Debug-iphonesimulator/EarthIPhone.app.dSYM build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone326635366#326635366#0(0"0(0#0#100"/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone8619707104#413"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app.dSYM0#
+
+CLd /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone normal i386
+s367847101.708992
+e367847102.062178
+r1
+xLd
+x/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+xnormal
+xi386
+lSLF07#2@82"Link /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone367847101#367847102#0(0"0(0#0#0"8608338080#835"    cd /Projects/EarthIPhone    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Projects/EarthIPhone/build/Debug-iphonesimulator -F/Projects/EarthIPhone/build/Debug-iphonesimulator -filelist /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhone.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone0#
+
+CLd /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone normal i386
+s326635366.735856
+e326635366.764282
+r1
+xLd
+x/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone
+xnormal
+xi386
+lSLF07#2@105"Link /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone326635366#326635366#0(0"0(0#0#0"8615714048#950"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -filelist /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/Objects-normal/i386/EarthIPhone.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/EarthIPhone0#
+
+CProcessInfoPlistFile /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist EarthIPhone-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist EarthIPhone-Info.plist
+s326632261.062164
+e326632261.065736
+r1
+xProcessInfoPlistFile
+x/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist
+xEarthIPhone-Info.plist
+lSLF07#2@30"Process EarthIPhone-Info.plist326632261#326632261#0(0"0(0#0#67"/Users/asyamiropolskaya/Projects/EarthIPhone/EarthIPhone-Info.plist8626178656#509"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility EarthIPhone-Info.plist -genpkginfo /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app/Info.plist0#
+
+CProcessPCH /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch.gch EarthIPhone_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s367847100.063653
+e367847101.175918
+r1
+xProcessPCH
+x/var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch.gch
+xEarthIPhone_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile EarthIPhone_Prefix.pch367847100#367847101#0(0"0(0#0#44"/Projects/EarthIPhone/EarthIPhone_Prefix.pch7957693760625210368#1712"    cd /Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -c /Projects/EarthIPhone/EarthIPhone_Prefix.pch -o /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-egykxdyxcktxqueyyyeaersbmbvu/EarthIPhone_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch.gch EarthIPhone_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s326632261.430127
+e326632262.323495
+r1
+xProcessPCH
+x/var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch.gch
+xEarthIPhone_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@33"Precompile EarthIPhone_Prefix.pch326632261#326632262#0(0"0(0#0#67"/Users/asyamiropolskaya/Projects/EarthIPhone/EarthIPhone_Prefix.pch8626266208#1942"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-generated-files.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-own-target-headers.hmap -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-all-target-headers.hmap -iquote /Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/EarthIPhone-project-headers.hmap -F/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/include -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources/i386 -I/Users/asyamiropolskaya/Projects/EarthIPhone/build/EarthIPhone.build/Debug-iphonesimulator/EarthIPhone.build/DerivedSources -c /Users/asyamiropolskaya/Projects/EarthIPhone/EarthIPhone_Prefix.pch -o /var/folders/Zs/ZsI2cB8NEJyS7pS1Osm4pE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/EarthIPhone_Prefix-fpqbgjeiecrlqkddraufbhcycwsy/EarthIPhone_Prefix.pch.gch0#
+
+CTouch /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+s367847102.117001
+e367847102.141150
+r1
+xTouch
+x/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+lSLF07#2@71"Touch /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app367847102#367847102#0(0"0(0#0#0"8608361952#248"    cd /Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app0#
+
+CTouch /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+s326635366.784404
+e326635366.787003
+r1
+xTouch
+x/Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app
+lSLF07#2@94"Touch /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app326635366#326635366#0(0"0(0#0#0"8619704064#294"    cd /Users/asyamiropolskaya/Projects/EarthIPhone    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/asyamiropolskaya/Projects/EarthIPhone/build/Debug-iphonesimulator/EarthIPhone.app0#
+

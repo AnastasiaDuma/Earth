@@ -1,0 +1,212 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* EarthIPhoneAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {624, 357}}";
+			sepNavSelRange = "{335, 0}";
+			sepNavVisRange = "{0, 479}";
+		};
+	};
+	1D3623250D0F684500981E51 /* EarthIPhoneAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {720, 624}}";
+			sepNavSelRange = "{7, 16}";
+			sepNavVisRange = "{0, 259}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* EarthIPhone */ = {
+		activeExec = 0;
+		executables = (
+			8B9D58CA1378034200077853 /* EarthIPhone */,
+		);
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 8B9D58CA1378034200077853 /* EarthIPhone */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* EarthIPhone */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* EarthIPhone */,
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 8B9D58E91378034800077853 /* Code sense */;
+		executables = (
+			8B9D58CA1378034200077853 /* EarthIPhone */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					446,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 367847096;
+			PBXWorkspaceStateSaveDate = 367847096;
+		};
+		perUserProjectItems = {
+			8B4F764915ECE982008BE357 /* PBXTextBookmark */ = 8B4F764915ECE982008BE357 /* PBXTextBookmark */;
+			8B4F764A15ECE982008BE357 /* PBXBookmark */ = 8B4F764A15ECE982008BE357 /* PBXBookmark */;
+			8B4F764B15ECE982008BE357 /* PBXBookmark */ = 8B4F764B15ECE982008BE357 /* PBXBookmark */;
+			8B4F764C15ECE982008BE357 /* PlistBookmark */ = 8B4F764C15ECE982008BE357 /* PlistBookmark */;
+			8B9D59F4137804C600077853 /* PBXTextBookmark */ = 8B9D59F4137804C600077853 /* PBXTextBookmark */;
+			8B9D5A0B137805DD00077853 /* PBXTextBookmark */ = 8B9D5A0B137805DD00077853 /* PBXTextBookmark */;
+			8B9D5A21137806E000077853 /* PBXTextBookmark */ = 8B9D5A21137806E000077853 /* PBXTextBookmark */;
+			8B9D5A22137806E000077853 /* PBXTextBookmark */ = 8B9D5A22137806E000077853 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 8B9D58E81378034800077853 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8B4F764915ECE982008BE357 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B9D59D0137803C000077853 /* EarthView.m */;
+		name = "EarthView.m: 56";
+		rLen = 0;
+		rLoc = 1014;
+		rType = 0;
+		vrLen = 610;
+		vrLoc = 715;
+	};
+	8B4F764A15ECE982008BE357 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8B9D5A161378065D00077853 /* Miller-projection1000.jpg */;
+	};
+	8B4F764B15ECE982008BE357 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 8D1107310486CEB800E47090 /* EarthIPhone-Info.plist */;
+	};
+	8B4F764C15ECE982008BE357 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* EarthIPhone-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Projects/EarthIPhone/EarthIPhone-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	8B9D58CA1378034200077853 /* EarthIPhone */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = EarthIPhone;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	8B9D58E81378034800077853 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	8B9D58E91378034800077853 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	8B9D59CE137803C000077853 /* EarthAccelerator.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 1534}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 358}";
+		};
+	};
+	8B9D59D0137803C000077853 /* EarthView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {922, 4849}}";
+			sepNavSelRange = "{1014, 0}";
+			sepNavVisRange = "{715, 610}";
+		};
+	};
+	8B9D59D2137803C000077853 /* EarthViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {978, 1131}}";
+			sepNavSelRange = "{264, 0}";
+			sepNavVisRange = "{29, 498}";
+		};
+	};
+	8B9D59F4137804C600077853 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B9D59CE137803C000077853 /* EarthAccelerator.m */;
+		name = "EarthAccelerator.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 358;
+		vrLoc = 0;
+	};
+	8B9D5A0B137805DD00077853 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* EarthIPhoneAppDelegate.h */;
+		name = "EarthIPhoneAppDelegate.h: 15";
+		rLen = 0;
+		rLoc = 335;
+		rType = 0;
+		vrLen = 479;
+		vrLoc = 0;
+	};
+	8B9D5A21137806E000077853 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* EarthIPhoneAppDelegate.m */;
+		name = "EarthIPhoneAppDelegate.m: 24";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 575;
+		vrLoc = 0;
+	};
+	8B9D5A22137806E000077853 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 8B9D59D2137803C000077853 /* EarthViewController.m */;
+		name = "EarthViewController.m: 17";
+		rLen = 0;
+		rLoc = 264;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 29;
+	};
+}
