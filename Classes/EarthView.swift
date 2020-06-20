@@ -15,9 +15,26 @@ class EarthView: UIView {
     private let earthImage = UIImage.init(named: "Miller-projection1000.jpg")
     
     private lazy var pointsOnSphere: [[PointOnSphere?]] = { // rename to Coordinate 2. should these be int? do we draw between pixels?
-        var tmp = [[PointOnSphere?]]()
-        for x in 0...D { // ??? D*screen scale?
-            for y in 0...D {
+        
+        // to each point on the view find this point's (la;lo) coordinate if the point is inside the circle
+        func coordinateFromPoint(x: Int, y: Int) -> PointOnSphere? {
+            let R = D / 2
+            let x_3d = x - R
+            let z_3d = -(y - R)
+            let distanceToPoint = R * R - (x_3d * x_3d + z_3d * z_3d)
+            if distanceToPoint < 0 {
+                return nil
+            } else {
+                let y_3d = sqrt(CGFloat(distanceToPoint))
+                let la = acos(CGFloat(z_3d) / CGFloat(R))
+                let lo = atan2(CGFloat(x_3d), CGFloat(y_3d))
+                return (la, lo)
+            }
+        }
+        
+        var tmp = [[PointOnSphere?]](repeating: [PointOnSphere?](repeating: (0, 0), count: D ), count: D)
+        for x in 0...D-1 { // ??? D*screen scale?
+            for y in 0...D-1 {
                 let coordinate = coordinateFromPoint(x: x, y: y)
                 tmp[x][y] = coordinate
             }
@@ -50,12 +67,18 @@ class EarthView: UIView {
         
         let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
         var offset: Int = 0
-        for i in 0...(D-1)*(D-1) {
-            (pixels+offset).pointee = 1
-            (pixels+offset+1).pointee = 255
-            (pixels+offset+2).pointee = 0
-            (pixels+offset+3).pointee = 0
-            offset += 4
+        for x in 0...D-1 {
+            for y in 0...D-1 {
+                if let coordinate = pointsOnSphere[x][y] {
+                    
+                } else {
+                    (pixels+offset).pointee = 1
+                    (pixels+offset+1).pointee = 0
+                    (pixels+offset+2).pointee = 255
+                    (pixels+offset+3).pointee = 0
+                }
+                offset += 4
+            }
         }
         
         let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
@@ -65,32 +88,12 @@ class EarthView: UIView {
         return context
     }()
     
-    // to each point on the view find this point's (la;lo) coordinate if the point is inside the circle
-    private func coordinateFromPoint(x: Int, y: Int) -> PointOnSphere? {
-        let R = D / 2
-        let x_3d = x - R
-        let z_3d = -(y) - R
-        let distanceToPoint = R * R - (x_3d * x_3d + z_3d * z_3d)
-        if distanceToPoint < 0 {
-            return nil
-        } else {
-            let y_3d = sqrt(CGFloat(distanceToPoint))
-            let la = acos(CGFloat(z_3d) / CGFloat(R))
-            let lo = atan2(CGFloat(x_3d), CGFloat(y_3d))
-            return (la, lo)
-        }
-    }
-    
     override func draw(_ rect: CGRect) {
         if let context = UIGraphicsGetCurrentContext() {
             //context.clear(rect)
 
             //let newImage = imageFromBitmap()
             let imageRect = CGRect(x: 0, y: 0, width: D, height: D)
-//            if let img = UIImage(named: "Miller-projection1000") {
-//                img.draw(in: imageRect)
-//            }
-                
             if let newImage = bitmapContext?.makeImage() {
                 context.draw(newImage, in: imageRect)
             }
