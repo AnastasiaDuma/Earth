@@ -8,7 +8,7 @@
 
 import UIKit
 
-typealias PointOnSphere = (la: CGFloat, lo: CGFloat)
+typealias PointOnSphere = (lo: CGFloat, la: CGFloat)
 
 class EarthView: UIView {
     
@@ -16,7 +16,8 @@ class EarthView: UIView {
     
     private lazy var pointsOnSphere: [[PointOnSphere?]] = { // rename to Coordinate 2. should these be int? do we draw between pixels?
         
-        // to each point on the view find this point's (la;lo) coordinate if the point is inside the circle
+        // to each point on the view find this point's (lo;la) coordinate if the point is inside the circle.
+        // for the points inside a circle we will find a corresponding color on the map image. Points outside the circle will be just black.
         func coordinateFromPoint(x: Int, y: Int) -> PointOnSphere? {
             let R = D / 2
             let x_3d = x - R
@@ -28,7 +29,7 @@ class EarthView: UIView {
                 let y_3d = sqrt(CGFloat(distanceToPoint))
                 let la = acos(CGFloat(z_3d) / CGFloat(R))
                 let lo = atan2(CGFloat(x_3d), CGFloat(y_3d))
-                return (la, lo)
+                return (lo, la)
             }
         }
         
@@ -67,10 +68,15 @@ class EarthView: UIView {
         
         let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
         var offset: Int = 0
-        for x in 0...D-1 {
-            for y in 0...D-1 {
+        // we need inverted Y for drawing, because CGImage's coorinates are upside down
+        for y in (0...D-1).reversed() {
+            for x in 0...D-1 {
                 if let coordinate = pointsOnSphere[x][y] {
-                    
+                    let tmpColor = self.sphere.colorOfPoint(withLongitude: coordinate.lo, latitude: coordinate.la)
+                    (pixels+offset).pointee = 1
+                    (pixels+offset+1).pointee = tmpColor.r
+                    (pixels+offset+2).pointee = tmpColor.g
+                    (pixels+offset+3).pointee = tmpColor.b
                 } else {
                     (pixels+offset).pointee = 1
                     (pixels+offset+1).pointee = 0
@@ -91,8 +97,7 @@ class EarthView: UIView {
     override func draw(_ rect: CGRect) {
         if let context = UIGraphicsGetCurrentContext() {
             //context.clear(rect)
-
-            //let newImage = imageFromBitmap()
+            
             let imageRect = CGRect(x: 0, y: 0, width: D, height: D)
             if let newImage = bitmapContext?.makeImage() {
                 context.draw(newImage, in: imageRect)
