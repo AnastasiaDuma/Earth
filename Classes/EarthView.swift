@@ -23,7 +23,7 @@ class EarthView: UIView {
             let x_3d = x - R
             let z_3d = -(y - R)
             let distanceToPoint = R * R - (x_3d * x_3d + z_3d * z_3d)
-            if distanceToPoint < 0 {
+            if distanceToPoint < 0 { // point is not in the circle
                 return nil
             } else {
                 let y_3d = sqrt(CGFloat(distanceToPoint))
@@ -33,14 +33,14 @@ class EarthView: UIView {
             }
         }
         
-        var tmp = [[PointOnSphere?]](repeating: [PointOnSphere?](repeating: (0, 0), count: D ), count: D)
+        var result = [[PointOnSphere?]](repeating: [PointOnSphere?](repeating: (0, 0), count: D ), count: D)
         for x in 0...D-1 { // ??? D*screen scale?
             for y in 0...D-1 {
                 let coordinate = coordinateFromPoint(x: x, y: y)
-                tmp[x][y] = coordinate
+                result[x][y] = coordinate
             }
         }
-        return tmp
+        return result
     }()
     
     private lazy var D: Int = {

@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* EarthIPhoneAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* EarthIPhoneAppDelegate.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		228F55B124AA3A7600DFB6B2 /* SphereProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F55B024AA3A7600DFB6B2 /* SphereProvider.swift */; };
+		228F55B324AA4FA500DFB6B2 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228F55B224AA4FA500DFB6B2 /* Sphere.swift */; };
 		22ACB306249DF5A100343FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ACB303249DF5A100343FFB /* AppDelegate.swift */; };
 		22ACB307249DF5A100343FFB /* EarthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ACB304249DF5A100343FFB /* EarthView.swift */; };
 		22ACB308249DF5A100343FFB /* EarthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22ACB305249DF5A100343FFB /* EarthViewController.swift */; };
 		288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765FC0DF74451002DB57D /* CoreGraphics.framework */; };
 		8B9D59D7137803C000077853 /* EarthAccelerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D59CE137803C000077853 /* EarthAccelerator.m */; };
-		8B9D59D8137803C000077853 /* EarthView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D59D0137803C000077853 /* EarthView.m */; };
-		8B9D59D9137803C000077853 /* EarthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D59D2137803C000077853 /* EarthViewController.m */; };
-		8B9D59DA137803C000077853 /* Sphere.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D59D4137803C000077853 /* Sphere.m */; };
-		8B9D59DB137803C000077853 /* SphereProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B9D59D6137803C000077853 /* SphereProvider.m */; };
 		8B9D5A171378065D00077853 /* Miller-projection1000.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B9D5A161378065D00077853 /* Miller-projection1000.jpg */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +25,8 @@
 		1D3623250D0F684500981E51 /* EarthIPhoneAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthIPhoneAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* Earth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Earth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		228F55B024AA3A7600DFB6B2 /* SphereProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SphereProvider.swift; sourceTree = "<group>"; };
+		228F55B224AA4FA500DFB6B2 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
 		22ACB302249DF5A000343FFB /* Earth-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Earth-Bridging-Header.h"; sourceTree = "<group>"; };
 		22ACB303249DF5A100343FFB /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22ACB304249DF5A100343FFB /* EarthView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarthView.swift; sourceTree = "<group>"; };
@@ -80,6 +79,8 @@
 				22ACB303249DF5A100343FFB /* AppDelegate.swift */,
 				22ACB304249DF5A100343FFB /* EarthView.swift */,
 				22ACB305249DF5A100343FFB /* EarthViewController.swift */,
+				228F55B024AA3A7600DFB6B2 /* SphereProvider.swift */,
+				228F55B224AA4FA500DFB6B2 /* Sphere.swift */,
 				22ACB302249DF5A000343FFB /* Earth-Bridging-Header.h */,
 			);
 			path = Classes;
@@ -201,13 +202,10 @@
 			files = (
 				22ACB306249DF5A100343FFB /* AppDelegate.swift in Sources */,
 				22ACB308249DF5A100343FFB /* EarthViewController.swift in Sources */,
+				228F55B324AA4FA500DFB6B2 /* Sphere.swift in Sources */,
 				22ACB307249DF5A100343FFB /* EarthView.swift in Sources */,
-				1D3623260D0F684500981E51 /* EarthIPhoneAppDelegate.m in Sources */,
 				8B9D59D7137803C000077853 /* EarthAccelerator.m in Sources */,
-				8B9D59D8137803C000077853 /* EarthView.m in Sources */,
-				8B9D59D9137803C000077853 /* EarthViewController.m in Sources */,
-				8B9D59DA137803C000077853 /* Sphere.m in Sources */,
-				8B9D59DB137803C000077853 /* SphereProvider.m in Sources */,
+				228F55B124AA3A7600DFB6B2 /* SphereProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
