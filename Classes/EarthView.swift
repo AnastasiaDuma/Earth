@@ -58,39 +58,7 @@ class EarthView: UIView {
     }
     
     private lazy var bitmapContext: CGContext? = {
-        let bytesPerPixel = 4
-        let bytesPerRow = bytesPerPixel * D
-        let bitsPerComponent = 8
-
-        let byteCount = (bytesPerRow * D)
-
-        let colorSpace = CGColorSpaceCreateDeviceRGB()
-        
-        let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
-        var offset: Int = 0
-        // we need inverted Y for drawing, because CGImage's coorinates are upside down
-        for y in (0...D-1).reversed() {
-            for x in 0...D-1 {
-                if let coordinate = pointsOnSphere[x][y] {
-                    let tmpColor = self.sphere.colorOfPoint(withLongitude: coordinate.lo, latitude: coordinate.la)
-                    (pixels+offset).pointee = 1
-                    (pixels+offset+1).pointee = tmpColor.r
-                    (pixels+offset+2).pointee = tmpColor.g
-                    (pixels+offset+3).pointee = tmpColor.b
-                } else {
-                    (pixels+offset).pointee = 1
-                    (pixels+offset+1).pointee = 0
-                    (pixels+offset+2).pointee = 255
-                    (pixels+offset+3).pointee = 0
-                }
-                offset += 4
-            }
-        }
-        
-        let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
-
-        let context = CGContext(data: pixels, width: D, height: D, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
-        
+        let context = SphereProvider.createEmptyBitmapContext(width: D, height: D)
         return context
     }()
     
@@ -99,8 +67,31 @@ class EarthView: UIView {
             //context.clear(rect)
             
             let imageRect = CGRect(x: 0, y: 0, width: D, height: D)
-            if let newImage = bitmapContext?.makeImage() {
-                context.draw(newImage, in: imageRect)
+            if let bitmapContext = bitmapContext, let data = bitmapContext.data {
+                let opaquePtr = OpaquePointer(data) // how to convert rawPointer to pointer?
+                let pixels = UnsafeMutablePointer<UInt8>(opaquePtr)
+                var offset: Int = 0
+                // we need inverted Y for drawing, because CGImage's coorinates are upside down
+                for y in (0...D-1).reversed() {
+                    for x in 0...D-1 {
+                        if let coordinate = pointsOnSphere[x][y] {
+                            let tmpColor = self.sphere.colorOfPoint(withLongitude: coordinate.lo, latitude: coordinate.la)
+                            (pixels+offset).pointee = 1
+                            (pixels+offset+1).pointee = tmpColor.r
+                            (pixels+offset+2).pointee = tmpColor.g
+                            (pixels+offset+3).pointee = tmpColor.b
+                        } else {
+                            (pixels+offset).pointee = 1
+                            (pixels+offset+1).pointee = 0
+                            (pixels+offset+2).pointee = 255
+                            (pixels+offset+3).pointee = 0
+                        }
+                        offset += 4
+                    }
+                }
+                if let newImage = bitmapContext.makeImage() {
+                    context.draw(newImage, in: imageRect)
+                }
             }
         }
 

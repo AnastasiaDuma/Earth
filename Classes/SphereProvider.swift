@@ -11,7 +11,7 @@ import UIKit
 // change to struct
 struct SphereProvider {
     // todo: try to use this also in EarthView class
-    static func createARGBBitmapContext(width: Int, height: Int) -> CGContext? {
+    static func createEmptyBitmapContext(width: Int, height: Int) -> CGContext? {
         
         let bytesPerPixel = 4 // 4 bytes per pixel: 8 bits to alpha, 8 bits to Red, 8 bits to Green, 8 bits to Blue
         let bytesPerRow = bytesPerPixel * width
@@ -21,7 +21,7 @@ struct SphereProvider {
 
         let colorSpace = CGColorSpaceCreateDeviceRGB()
         
-        let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount) // todo: try to pass NULL, it should work
+        let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
         
         let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
 
@@ -40,7 +40,7 @@ struct SphereProvider {
         
         var colorPoints = [[ColorInfo]].init(repeating: [ColorInfo].init(repeating: ColorInfo(), count: imageWidth), count: imageHeight)
         
-        if let context = createARGBBitmapContext(width: imageWidth, height: imageHeight) { // todo: do not hardcode
+        if let context = createEmptyBitmapContext(width: imageWidth, height: imageHeight) { // todo: do not hardcode
 
             let rect = CGRect(x: 0, y: 0, width: imageWidth, height: imageHeight)
 
@@ -58,14 +58,14 @@ struct SphereProvider {
                 let ymin = log(tan(CGFloat.pi / 20))
                 let ymax = log(tan(9 * CGFloat.pi / 20))
                 let yrange = ymax - ymin
+                let opaquePtr = OpaquePointer(data) // WTF?
+                let pixels = UnsafeMutablePointer<UInt8>(opaquePtr)
                 for y in 0...dimY-1 {
                     for x in 0...dimX-1 {
                         let phi = CGFloat(y) / CGFloat(dimY) * CGFloat.pi - CGFloat.pi / 2 // [-PI/2; PI/2)
                         let y1 = (log(tan(CGFloat.pi / 4 + 2 * phi / 5)) - ymin) / yrange * CGFloat(dimY) // [0..dimY)
                         let offset = 4 * (imageWidth * Int(y1) + x)
                         // int alpha = data[offset]; // commented to avoid warning
-                        let opaquePtr = OpaquePointer(data) // WTF?
-                        let pixels = UnsafeMutablePointer<UInt8>(opaquePtr)
                         let red = (pixels+offset+1).pointee
                         let green = (pixels+offset+2).pointee
                         let blue = (pixels+offset+3).pointee
