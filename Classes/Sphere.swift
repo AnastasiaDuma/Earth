@@ -9,12 +9,7 @@ import Foundation
 
 struct Sphere {
     
-    let colorPoints: [[ColorInfo]] = SphereProvider.fillPixelsArray(dimX: 1363, dimY: 1000) // todo: remove hardcode
-    
-    init() {
-        //var colors = [ColorInfo]()
-        //SphereProvider.fillPixelsArray(&colors, dimX: 1363, dimY: 1000) // todo: remove hardcode
-    }
+    let pixels: [[ColorInfo]] = SphereProvider.pixelsFromMapImage()
 
     // todo: still need this in swift?
     private func gaussian_fmod(_ x: CGFloat, _ y: CGFloat) -> CGFloat {
@@ -37,7 +32,7 @@ struct Sphere {
         let i = Int(CGFloat(LONGITUDE_RESOLUTION) / (2 * .pi) * red_lo)
         let j = Int(CGFloat(LATITUDE_RESOLUTION) / .pi * red_la)
 
-        let color = colorPoints[j][i]
+        let color = pixels[j][i]
 
         return color
     }

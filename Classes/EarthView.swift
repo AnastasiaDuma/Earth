@@ -8,17 +8,15 @@
 
 import UIKit
 
-typealias PointOnSphere = (lo: CGFloat, la: CGFloat)
+typealias Coordinate = (lo: CGFloat, la: CGFloat)
 
 class EarthView: UIView {
     
-    private let earthImage = UIImage.init(named: "Miller-projection1000.jpg")
-    
-    private lazy var pointsOnSphere: [[PointOnSphere?]] = { // rename to Coordinate 2. should these be int? do we draw between pixels?
+    private lazy var coordinates: [[Coordinate?]] = { // 1. should these be int? do we draw between pixels?
         
         // to each point on the view find this point's (lo;la) coordinate if the point is inside the circle.
         // for the points inside a circle we will find a corresponding color on the map image. Points outside the circle will be just black.
-        func coordinateFromPoint(x: Int, y: Int) -> PointOnSphere? {
+        func coordinateFromPoint(x: Int, y: Int) -> Coordinate? {
             let R = D / 2
             let x_3d = x - R
             let z_3d = -(y - R)
@@ -33,7 +31,7 @@ class EarthView: UIView {
             }
         }
         
-        var result = [[PointOnSphere?]](repeating: [PointOnSphere?](repeating: (0, 0), count: D ), count: D)
+        var result = [[Coordinate?]](repeating: [Coordinate?](repeating: (0, 0), count: D ), count: D)
         for x in 0...D-1 { // ??? D*screen scale?
             for y in 0...D-1 {
                 let coordinate = coordinateFromPoint(x: x, y: y)
@@ -74,7 +72,7 @@ class EarthView: UIView {
                 // we need inverted Y for drawing, because CGImage's coorinates are upside down
                 for y in (0...D-1).reversed() {
                     for x in 0...D-1 {
-                        if let coordinate = pointsOnSphere[x][y] {
+                        if let coordinate = coordinates[x][y] {
                             let tmpColor = self.sphere.colorOfPoint(withLongitude: coordinate.lo, latitude: coordinate.la)
                             (pixels+offset).pointee = 1
                             (pixels+offset+1).pointee = tmpColor.r

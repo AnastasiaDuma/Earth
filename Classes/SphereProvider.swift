@@ -30,17 +30,17 @@ struct SphereProvider {
         return context
     }
     
-    // don't need dimX dimY they are imageWidth and imageHeight
-    // change points to be a function return type
-    public static func fillPixelsArray(dimX: Int, dimY: Int) -> [[ColorInfo]] {
-        guard let image = UIImage(named: "Miller-projection1000.jpg")?.cgImage else { return [[ColorInfo]]() }
+    private static let mapImage = UIImage(named: "Miller-projection1000.jpg")?.cgImage
+    
+    public static func pixelsFromMapImage() -> [[ColorInfo]] {
+        guard let image = Self.mapImage else { return [[ColorInfo]]() }
 
         let imageWidth = image.width
         let imageHeight = image.height
         
         var colorPoints = [[ColorInfo]].init(repeating: [ColorInfo].init(repeating: ColorInfo(), count: imageWidth), count: imageHeight)
         
-        if let context = createEmptyBitmapContext(width: imageWidth, height: imageHeight) { // todo: do not hardcode
+        if let context = createEmptyBitmapContext(width: imageWidth, height: imageHeight) {
 
             let rect = CGRect(x: 0, y: 0, width: imageWidth, height: imageHeight)
 
@@ -50,20 +50,20 @@ struct SphereProvider {
             if let data = context.data {
 
                 /*
-                     // since the map is encoded as Miller cylindrical projection,
-                     // we need to remap the value of y, using the formula (2)
-                     // from http://mathworld.wolfram.com/MillerCylindricalProjection.html
-                     */
+                 since the map is encoded as Miller cylindrical projection,
+                 we need to remap the value of y, using the formula (2)
+                 from http://mathworld.wolfram.com/MillerCylindricalProjection.html
+                */
 
                 let ymin = log(tan(CGFloat.pi / 20))
                 let ymax = log(tan(9 * CGFloat.pi / 20))
                 let yrange = ymax - ymin
                 let opaquePtr = OpaquePointer(data) // WTF?
                 let pixels = UnsafeMutablePointer<UInt8>(opaquePtr)
-                for y in 0...dimY-1 {
-                    for x in 0...dimX-1 {
-                        let phi = CGFloat(y) / CGFloat(dimY) * CGFloat.pi - CGFloat.pi / 2 // [-PI/2; PI/2)
-                        let y1 = (log(tan(CGFloat.pi / 4 + 2 * phi / 5)) - ymin) / yrange * CGFloat(dimY) // [0..dimY)
+                for y in 0...imageHeight - 1 {
+                    for x in 0...imageWidth - 1 {
+                        let phi = CGFloat(y) / CGFloat(imageHeight) * CGFloat.pi - CGFloat.pi / 2 // [-PI/2; PI/2)
+                        let y1 = (log(tan(CGFloat.pi / 4 + 2 * phi / 5)) - ymin) / yrange * CGFloat(imageHeight) // [0..dimY)
                         let offset = 4 * (imageWidth * Int(y1) + x)
                         // int alpha = data[offset]; // commented to avoid warning
                         let red = (pixels+offset+1).pointee
