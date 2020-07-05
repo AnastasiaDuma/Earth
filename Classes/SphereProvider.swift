@@ -34,15 +34,11 @@ struct SphereProvider {
         let bytesPerRow = bytesPerPixel * width
         let bitsPerComponent = 8
 
-        let byteCount = (bytesPerRow * height)
-
         let colorSpace = CGColorSpaceCreateDeviceRGB()
-        
-        let pixels = UnsafeMutablePointer<UInt8>.allocate(capacity: byteCount)
         
         let bitmapInfo = CGImageAlphaInfo.premultipliedFirst.rawValue
 
-        let context = CGContext(data: pixels, width: width, height: height, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
+        let context = CGContext(data: nil, width: width, height: height, bitsPerComponent: bitsPerComponent, bytesPerRow: bytesPerRow, space: colorSpace, bitmapInfo: bitmapInfo)
         
         return context
     }
