@@ -56,7 +56,7 @@ class EarthView: UIView {
     }
     
     private lazy var bitmapContext: CGContext? = {
-        let context = SphereProvider.createEmptyBitmapContext(width: D, height: D)
+        let context = sphere.sphereProvider.createEmptyBitmapContext(width: D, height: D)
         return context
     }()
     

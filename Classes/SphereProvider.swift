@@ -8,10 +8,27 @@
 import Foundation
 import UIKit
 
-// change to struct
+struct ColorInfo
+{
+    public var r: UInt8 = 0
+    public var g: UInt8 = 0
+    public var b: UInt8 = 0
+}
+
 struct SphereProvider {
-    // todo: try to use this also in EarthView class
-    static func createEmptyBitmapContext(width: Int, height: Int) -> CGContext? {
+    private let mapImage: CGImage?
+    public let imageSize: CGSize
+    
+    init() {
+        mapImage = UIImage(named: "Miller-projection1000.jpg")?.cgImage
+        if let mapImage = mapImage {
+            imageSize = CGSize(width: mapImage.width, height: mapImage.height)
+        } else {
+            imageSize = CGSize.zero
+        }
+    }
+    
+    public func createEmptyBitmapContext(width: Int, height: Int) -> CGContext? {
         
         let bytesPerPixel = 4 // 4 bytes per pixel: 8 bits to alpha, 8 bits to Red, 8 bits to Green, 8 bits to Blue
         let bytesPerRow = bytesPerPixel * width
@@ -30,13 +47,11 @@ struct SphereProvider {
         return context
     }
     
-    private static let mapImage = UIImage(named: "Miller-projection1000.jpg")?.cgImage
-    
-    public static func pixelsFromMapImage() -> [[ColorInfo]] {
-        guard let image = Self.mapImage else { return [[ColorInfo]]() }
+    public func pixelsFromMapImage() -> [[ColorInfo]] {
+        guard let image = mapImage else { return [[ColorInfo]]() }
 
-        let imageWidth = image.width
-        let imageHeight = image.height
+        let imageWidth = Int(imageSize.width)
+        let imageHeight = Int(imageSize.height)
         
         var colorPoints = [[ColorInfo]].init(repeating: [ColorInfo].init(repeating: ColorInfo(), count: imageWidth), count: imageHeight)
         
